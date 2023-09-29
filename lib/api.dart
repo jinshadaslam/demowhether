@@ -51,7 +51,6 @@ class Fech extends ChangeNotifier {
   Future<void> _fetchWeather() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String apiid = 'https://api.openweathermap.org/data/2.5/weather';
-    String apiKey = '520ec85e1561c778950d0ef77837b926';
 
     final response = await http.get(
       Uri.parse(
