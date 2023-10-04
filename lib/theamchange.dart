@@ -20,10 +20,10 @@ class ThemeProvider extends ChangeNotifier {
   void updateThemeBasedOnTime() {
     final currentTime = DateTime.now();
 
-    if ((currentTime.hour >= 15 && currentTime.minute >= 4)) {
+    if ((currentTime.hour >= 15 && currentTime.minute >= 33)) {
       theme(true);
     }
-    if ((currentTime.hour >= 15 && currentTime.minute >= 5)) {
+    if ((currentTime.hour >= 15 && currentTime.minute >= 35)) {
       theme(false);
     }
 

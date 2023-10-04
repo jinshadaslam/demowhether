@@ -165,8 +165,7 @@ class _HomePageState extends State<HomePage> {
                   return SizedBox(
                       height: screenheigt * 0.20,
                       child: value.data != null
-                          ? getLeadingWidget(
-                              weatherobj.data!.weather[0].description)
+                          ? getLeadingWidget(value.data!.weather[0].description)
                           : const Center(child: CircularProgressIndicator()));
                 }),
                 Consumer<Fech>(
